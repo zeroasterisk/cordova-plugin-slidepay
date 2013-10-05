@@ -13,7 +13,16 @@ http://docs.phonegap.com/en/3.0.0/plugin_ref_spec.md.html#Plugin%20Specification
 SlidePay Developer Portal:
 https://getcube.atlassian.net/wiki/display/CDP/SlidePay+Developer+Portal
 
+Setup Example App
 ----------------------------
+
+```
+mkdir -p /D/Mobile/
+cd /D/Mobile
+phonegap create example-slidepay com.example.slidepay SlidepayExample
+cd example-slidepay
+phonegap -V build ios
+```
 
 
 iOS
@@ -34,6 +43,7 @@ sudo gem install cocoapods
 cd into the target (working) directory
 
 ```
+cd /D/Mobile/cordova-plugin-slidepay/src/ios
 echo "platform :ios, '5.0'" > Podfile
 echo "pod 'SlidePay_iOS', :git => 'https://github.com/SlidePay/SlidePay_iOS.git'" >> Podfile
 pod install
